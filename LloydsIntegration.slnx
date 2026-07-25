@@ -4,4 +4,8 @@
   <Folder Name="/TODO/">
     <File Path="TODO/Lloyds_Integration_TODO_List.docx" />
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+    <File Path=".gitignore" />
+  </Folder>
 </Solution>
