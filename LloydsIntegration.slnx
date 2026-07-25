@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LloydsIntegration/LloydsIntegration.csproj" />
+  <Project Path="Lloyds/Lloyds.csproj" />
+</Solution>
