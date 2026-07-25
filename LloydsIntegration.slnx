@@ -1,4 +1,7 @@
 <Solution>
   <Project Path="LloydsIntegration/LloydsIntegration.csproj" />
   <Project Path="Lloyds/Lloyds.csproj" />
+  <Folder Name="/TODO/">
+    <File Path="TODO/Lloyds_Integration_TODO_List.docx" />
+  </Folder>
 </Solution>
