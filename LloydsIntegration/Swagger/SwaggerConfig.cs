@@ -40,6 +40,18 @@ public static class SwaggerConfig
             // Several modules independently define same-named model classes (e.g. RequestDataWrapper, GatewayError)
             // in different namespaces; use the full type name to keep schema IDs unique.
             options.CustomSchemaIds(type => type.FullName);
+
+            // Surface /// <summary> comments in Swagger UI. Both assemblies generate a doc XML file (see
+            // GenerateDocumentationFile in each .csproj) — controllers/DTOs live in LloydsIntegration.xml,
+            // shared request/response models live in Lloyds.xml.
+            foreach (var xmlFile in new[] { "LloydsIntegration.xml", "Lloyds.xml" })
+            {
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                if (File.Exists(xmlPath))
+                {
+                    options.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
+                }
+            }
         });
     }
 }
