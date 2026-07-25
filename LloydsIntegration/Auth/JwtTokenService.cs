@@ -9,6 +9,7 @@ namespace LloydsIntegration.Auth;
 
 public interface IJwtTokenService
 {
+    /// <summary>Issues a new signed JWT for the given username along with its UTC expiry.</summary>
     (string Token, DateTime ExpiresAtUtc) GenerateToken(string username);
 }
 

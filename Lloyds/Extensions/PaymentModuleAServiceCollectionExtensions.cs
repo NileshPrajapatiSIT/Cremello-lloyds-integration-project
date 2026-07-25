@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Lloyds.Extensions;
 
+/// <summary>Registers the Chaps Payment, Faster Payment, Payment Status, and JWKS proxy services.</summary>
 public static class PaymentModuleAServiceCollectionExtensions
 {
     public static IServiceCollection AddPaymentModuleA(this IServiceCollection services)

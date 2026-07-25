@@ -7,6 +7,8 @@ using Microsoft.Extensions.Options;
 
 namespace LloydsIntegration.Controllers;
 
+/// <summary>Issues JWTs for this API. Not part of the Lloyds Gem API surface — this is our own, hardcoded-credential
+/// authentication for the internal API itself (see AdminCredentials in appsettings.json).</summary>
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase

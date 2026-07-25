@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Lloyds.Extensions;
 
+/// <summary>Registers the Account Reporting and Balance proxy services.</summary>
 public static class ReportingModuleAServiceCollectionExtensions
 {
     public static IServiceCollection AddReportingModuleA(this IServiceCollection services)

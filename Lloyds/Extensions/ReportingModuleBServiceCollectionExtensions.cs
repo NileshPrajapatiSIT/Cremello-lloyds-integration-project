@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Lloyds.Extensions;
 
+/// <summary>Registers the Statement, Statement Retrieve, and Transactions proxy services.</summary>
 public static class ReportingModuleBServiceCollectionExtensions
 {
     public static IServiceCollection AddReportingModuleB(this IServiceCollection services)

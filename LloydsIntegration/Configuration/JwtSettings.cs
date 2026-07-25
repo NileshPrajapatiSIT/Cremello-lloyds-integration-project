@@ -1,5 +1,6 @@
 namespace LloydsIntegration.Configuration;
 
+/// <summary>Signing config for the JWTs this API issues from /api/auth/login (not related to Lloyds' own OAuth).</summary>
 public class JwtSettings
 {
     public const string SectionName = "Jwt";

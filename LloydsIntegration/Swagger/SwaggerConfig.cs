@@ -2,6 +2,7 @@ using Microsoft.OpenApi.Models;
 
 namespace LloydsIntegration.Swagger;
 
+/// <summary>Configures Swagger/OpenAPI generation, including the JWT bearer auth scheme shown in Swagger UI.</summary>
 public static class SwaggerConfig
 {
     public static void AddConfiguredSwaggerGen(this IServiceCollection services)
